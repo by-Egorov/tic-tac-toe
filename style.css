@@ -1,11 +1,13 @@
 body {
 	background: #c4c4c4;
 }
+
 .container {
 	position: relative;
 }
+
 .board {
-	width: 100%x;
+	width: 100%;
 	height: 100vh;
 	display: grid;
 	grid-template-columns: 100px 100px 100px;
@@ -13,6 +15,7 @@ body {
 	gap: 8px;
 	margin: 150px 20px;
 }
+
 .board-item {
 	border: 1px solid #000;
 	background-color: #c4c4c4;
@@ -21,26 +24,34 @@ body {
 	border-radius: 8px;
 	cursor: pointer;
 }
+
 .board-item:hover {
 	filter: brightness(.85);
 }
+
 .default {
 	color: green;
 }
+
 .zero {
 	color: red;
 }
+
 .bcg-active-zero {
 	background-color: rgba(131, 186, 186, 0.688);
 }
+
 .bcg-active-cross {
 	background-color: coral;
 }
+
 .active.board-item:hover {
 	background: #000;
 }
+
 .new-game {
 	position: absolute;
-	bottom: -60px;
-	left: 49%;
+	cursor: pointer;
+	bottom: 238px;
+	left: 40%;
 }

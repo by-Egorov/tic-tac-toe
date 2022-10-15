@@ -1,4 +1,4 @@
-const board	= document.querySelector('.board')
+const board = document.querySelector('.board')
 const newGame = document.querySelector('.new-game')
 let counter = 0
 
