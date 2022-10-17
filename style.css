@@ -1,57 +1,69 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
 body {
-	background: #c4c4c4;
+  font-family: "Maven Pro", sans-serif;
 }
 
-.container {
-	position: relative;
+.game-title {
+  display: block;
+  margin-bottom: 30px;
+  color: #222;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
 }
 
-.board {
-	width: 100%;
-	height: 100vh;
-	display: grid;
-	grid-template-columns: 100px 100px 100px;
-	grid-template-rows: 100px 100px 100px;
-	gap: 8px;
-	margin: 150px 20px;
+.game {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 302px;
+  margin: 0 auto 50px;
+  border: 1px solid #000;
+  position: relative;
 }
 
-.board-item {
-	border: 1px solid #000;
-	background-color: #c4c4c4;
-	font-size: 90px;
-	text-align: center;
-	border-radius: 8px;
-	cursor: pointer;
+.game-item {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  line-height: 90px;
+  border: 1px solid #000;
+  cursor: pointer;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  transition: all linear 0.3s;
+}
+.game-item:hover {
+  background: #ccc;
 }
 
-.board-item:hover {
-	filter: brightness(.85);
+#reset-game {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #000;
+  border-radius: 8px;
+  background: transparent;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+#reset-game:hover {
+  background: #ccc;
 }
 
-.default {
-	color: green;
+#messages {
+  font-size: 56px;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  color: red;
+  position: absolute;
+  top: 111px;
+  left: -54px;
 }
 
-.zero {
-	color: red;
-}
-
-.bcg-active-zero {
-	background-color: rgba(131, 186, 186, 0.688);
-}
-
-.bcg-active-cross {
-	background-color: coral;
-}
-
-.active.board-item:hover {
-	background: #000;
-}
-
-.new-game {
-	position: absolute;
-	cursor: pointer;
-	bottom: 238px;
-	left: 40%;
-}
+/*# sourceMappingURL=style.css.map */
