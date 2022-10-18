@@ -57,13 +57,15 @@ body {
 }
 
 #messages {
-  font-size: 56px;
-  text-transform: uppercase;
-  letter-spacing: 1em;
+  font-size: 25px;
   color: red;
+  letter-spacing: 0.3em;
   position: absolute;
-  top: 111px;
-  left: -54px;
+  top: 114px;
+  left: -1px;
+  background: #fff;
+  width: 302px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
