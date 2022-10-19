@@ -21,3 +21,16 @@ $maxWidthContainer: 1170;
         #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
     }
 }
+
+// To %
+@function prc($pixels, $context: $browser-context) {
+    @return ($pixels / $context) * 1prc;
+}
+// To em
+@function em($pixels, $context: $browser-context) {
+    @return ($pixels / $context) * 1em;
+}
+// To rem
+@function rem($pixels, $context: $browser-context) {
+    @return ($pixels / $context) * 1rem;
+}

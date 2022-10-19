@@ -5,7 +5,7 @@
     outline: none;
 }
 body {
-    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Indie Flower', cursive;
     background: #ccc;
 }
 .container {
@@ -17,7 +17,7 @@ body {
     color: rgb(245, 112, 3);
     font-weight: 700;
     text-align: center;
-    @include adaptive-value('font-size', 35, 20, 0)
+    @include adaptive-value('font-size', 55, 20, 0);
 }
 .game {
     display: flex;
@@ -60,8 +60,8 @@ body {
 }
 #messages {
     position: absolute;
-    top: 0px;
-    left: 318px;
+    top: 0;
+    left: 0;
     color: rgb(245, 112, 3);
     @include adaptive-value('font-size', 45, 25, 0);
     width: 300px;
