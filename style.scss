@@ -1,11 +1,10 @@
-@import 'function';
+@import './function';
 
 * {
     box-sizing: border-box;
     outline: none;
 }
 body {
-    font-family: 'Indie Flower', cursive;
     background: #ccc;
 }
 .container {
@@ -28,6 +27,7 @@ body {
     border: 1px solid #000;
     position: relative;
     z-index: 1;
+    font-family: 'Indie Flower', cursive;
 }
 .game-item {
     position: relative;

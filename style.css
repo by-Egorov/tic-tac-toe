@@ -4,7 +4,6 @@
 }
 
 body {
-  font-family: "Indie Flower", cursive;
   background: #ccc;
 }
 
@@ -30,6 +29,7 @@ body {
   border: 1px solid #000;
   position: relative;
   z-index: 1;
+  font-family: "Indie Flower", cursive;
 }
 
 .game-item {
