@@ -43,13 +43,13 @@ function currentStep() {
       for (let i = 0; i < ceil.length; i++) {
         ceil[i].removeEventListener("click", currentStep);
       }
-      return (messages.innerText = "Победил игрок " + player);
+      return (messages.innerText = "Победил игрок " + player) && messages.classList.add('visible');
     }
     changePlayer();
     stepCount++;
     stepCount === 9
-      ? (messages.innerText = "Ничья")
-      : (message.innerText = "Ходит игрок " + player)
+      ? messages.innerText = "Ничья"
+      : message.innerText = "Ходит игрок " + player
   }
 }
 
@@ -66,6 +66,7 @@ reset.addEventListener("click", function() {
   player = "X"
   stepCount = 0
   messages.innerText = ''
+  messages.classList.remove('visible')
   message.innerText = "Ходит игрок " + player
   for (let i = 0; i < ceil.length; i++) {
     ceil[i].addEventListener("click", currentStep)
