@@ -65,7 +65,7 @@ body {
 #messages {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 30px;
   color: rgb(245, 112, 3);
   font-size: calc(25px + 20 * ((100vw - 320px) / 1600));
   width: 300px;
